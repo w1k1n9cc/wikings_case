@@ -16,7 +16,7 @@ SRC_URI="http://www.yacy.net/release/yacy_v${MAJOR_PV}_${REL_PV}_${SVN_PV}.tar.g
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 x86 ppc"
+KEYWORDS="~amd64 ~x86"
 IUSE="systemd"
 
 DEPEND=">=virtual/jdk-1.7"

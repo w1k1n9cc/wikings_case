@@ -13,7 +13,7 @@ SRC_URI="https://github.com/vain/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="PIZZA-WARE-42"
 SLOT="0"
-KEYWORDS="amd64 x86 ppc"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="app-text/poppler

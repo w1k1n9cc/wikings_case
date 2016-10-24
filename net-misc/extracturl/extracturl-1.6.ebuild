@@ -11,7 +11,7 @@ SRC_URI="https://github.com/m3m0ryh0l3/${PN}/archive/v${PV}.tar.gz"
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="alpha amd64 arm ia64 ppc ppc64 s390 sh sparc x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND="dev-perl/MIME-tools

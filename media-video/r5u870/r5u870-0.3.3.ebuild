@@ -12,21 +12,21 @@ SRC_URI="https://github.com/3pei/r5u870/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=dev-libs/libusb-0.1.12
+DEPEND="virtual/libusb
         >=dev-libs/glib-2.16"
 RDEPEND="${DEPEND}"
 
 S="${S}/r5u870"
 pkg_setup() {
-	        linux-mod_pkg_setup
+  linux-mod_pkg_setup
 
-			linux_config_exists || die "Your kernel sources are unconfigured"
+  linux_config_exists || die "Your kernel sources are unconfigured"
 
-			BUILD_TARGETS="clean all"
-			MODULE_NAMES="r5u870(:${S}:${S}"
+  BUILD_TARGETS="clean all"
+  MODULE_NAMES="r5u870(:${S}:${S}"
 }
 
 src_compile () {
@@ -38,13 +38,13 @@ src_install ()
 {
   cd "r5u870"
 		
-		insinto /lib/firmware
-		doins r5u870_*.fw
-		doins recode-fw.scm
-		
-		# Module installieren
-		#usbcam/usbcam.ko
-		#r5u870.ko
+  insinto /lib/firmware
+  doins r5u870_*.fw
+  doins recode-fw.scm
 
-		linux-mod_src_install
+  # Module installieren
+  #usbcam/usbcam.ko
+  #r5u870.ko
+
+  linux-mod_src_install
 }

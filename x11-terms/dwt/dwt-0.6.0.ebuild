@@ -10,7 +10,7 @@ SRC_URI="https://github.com/aperezdc/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="x86 amd64 ppc"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-libs/glib-2

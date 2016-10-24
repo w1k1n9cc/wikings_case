@@ -25,7 +25,7 @@ LICENSE="
 	terminus_pcf? ( OFL-1.1 )
 	ubuntumono? ( UbuntuFontLicense-1.0 )"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86 ~x86-fbsd"
+KEYWORDS="~amd64 ~x86"
 
 # src_install() expects USE flags to be the lowercase basenames of the
 # corresponding font directories. See src_install_font() for details.

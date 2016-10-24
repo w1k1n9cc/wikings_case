@@ -10,10 +10,10 @@ SRC_URI=""
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=dev-libs/libusb-0.1.12
+DEPEND="virtual/libusb
         >=dev-libs/glib-2.16"
 RDEPEND="${DEPEND}"
 
@@ -33,11 +33,11 @@ src_install ()
 {
   cd "${WORKDIR}/r5u87x"
 
-        dodoc README docs/*.txt
+  dodoc README docs/*.txt
 
-        exeinto "/usr/$(get_libdir)/${PN}"
-        doexe loader
+  exeinto "/usr/$(get_libdir)/${PN}"
+  doexe loader
 
-        insinto "/usr/$(get_libdir)/${PN}/ucode"
-        doins ucode/*.fw
+  insinto "/usr/$(get_libdir)/${PN}/ucode"
+  doins ucode/*.fw
 }

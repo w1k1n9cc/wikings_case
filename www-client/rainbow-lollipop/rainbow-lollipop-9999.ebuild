@@ -12,7 +12,7 @@ DESCRIPTION="the visual history browser"
 HOMEPAGE="http://rainbow-lollipop.de/"
 CMAKE_IN_SOURCE_BUILD="1"
 EGIT_REPO_URI="https://github.com/grindhold/rainbow-lollipop.git"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 LICENSE="GPL-3"
 SLOT="0"
 
@@ -22,7 +22,7 @@ DEPEND="
 	net-libs/zeromq:0
 	net-libs/webkit-gtk:4
 	dev-libs/libgee:0.8
-	dev-util/pkgconfig
+	virtual/pkgconfig
 	>=dev-util/cmake-2.6
 	dev-libs/glib
 	x11-libs/gtk+:3

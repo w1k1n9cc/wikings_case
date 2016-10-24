@@ -11,7 +11,7 @@ SRC_URI=""
 
 LICENSE="LGPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 IUSE="dbus garmin gps gtk nls python sdl speechd svg"
 
 RDEPEND="dev-libs/glib:2
