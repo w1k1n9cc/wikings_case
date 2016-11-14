@@ -7,11 +7,12 @@ PYTHON_COMPAT=( python2_7 )
 
 inherit distutils-r1
 
-MY_PV="1.2.1+16.10.20160922"
+MY_PV="1.2.1+16.10.20161102"
 
 DESCRIPTION="Scripts to work with Phablet. Installs Touch Developer Preview on Nexus devices"
 HOMEPAGE="https://launchpad.net/phablet-tools"
-SRC_URI="https://launchpad.net/ubuntu/+archive/primary/+files/${PN}_${MY_PV}.orig.tar.gz"
+# SRC_URI="https://launchpad.net/ubuntu/+archive/primary/+files/${PN}_${MY_PV}.orig.tar.gz"
+SRC_URI="https://launchpad.net/~phablet-team/+archive/ubuntu/tools/+files/${PN}_${MY_PV}.orig.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
