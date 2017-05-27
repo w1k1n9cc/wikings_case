@@ -11,7 +11,7 @@ SRC_URI="http://apps.fz-juelich.de/scalasca/releases/${PN}/4.3/dist/${P}.tar.gz"
 LICENSE="BSD-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+static +shared"
+IUSE="+shared -static"
 
 DEPEND="sys-libs/zlib
 		dev-lang/perl

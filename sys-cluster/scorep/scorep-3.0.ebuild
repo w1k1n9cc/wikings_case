@@ -11,7 +11,7 @@ SRC_URI="http://www.vi-hps.org/upload/packages/${PN}/${P}.tar.gz"
 LICENSE="BSD-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+static +shared -opari2 -otf2 -cube"
+IUSE="+shared -opari2 -otf2 -cube -static"
 
 DEPEND="opari2? ( !sys-cluser/opari2 )
 		!opari2? ( !sys-cluster/opari2 )
