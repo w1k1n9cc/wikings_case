@@ -11,7 +11,7 @@ SRC_URI="http://apps.fz-juelich.de/scalasca/releases/${PN}/4.3/dist/${P}.tar.gz"
 LICENSE="BSD-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="+shared -static"
 
 DEPEND="sys-libs/zlib
 		dev-lang/perl
@@ -20,7 +20,10 @@ RDEPEND="${DEPEND}"
 
 src_configure() {
 	if [[ -x ${ECONF_SOURCE:-.}/configure  ]] ; then
-		econf
+		# build with static and shared libs
+		econf \
+			$(use_enable static) \
+			$(use_enable shared)
 	fi
 
 	# replace -isystem flags von QT_CPPFLAGS with the right -I flag for moc and
